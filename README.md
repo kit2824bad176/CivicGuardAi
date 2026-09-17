@@ -58,14 +58,29 @@ CivicGuardAI provides an AI-powered platform for reporting, tracking, and managi
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose                         |
-| ---------- | ------------------------------- |
-| Next.js    | Web application framework       |
-| TypeScript | Application development         |
-| React      | User interface                  |
-| MongoDB    | Data storage                    |
-| Python     | AI/service components           |
-| AI/ML      | Intelligent incident assistance |
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Next.js API Routes
+
+### Database
+- MongoDB
+
+### AI / Machine Learning
+- Python
+- AI-powered incident analysis
+
+### Tools & Services
+- Git
+- GitHub
+- REST APIs
 
 ## ⚙️ Getting Started
 
