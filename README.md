@@ -53,7 +53,6 @@ CivicGuardAI provides an AI-powered platform for reporting, tracking, and managi
 
 > 🚧 Live demo coming soon.
 
-## 🛠️ Tech Stack
 
 ## 🛠️ Tech Stack
 
@@ -147,7 +146,7 @@ The goal of CivicGuardAI is to combine **web technologies, artificial intelligen
 
 **Vanitha M**
 
-AI & Data Science
+AI & Data Science  
 KIT – Kalaignarkarunanidhi Institute of Technology, Coimbatore
 
 ---
