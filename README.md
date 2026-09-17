@@ -34,22 +34,19 @@ The AI component can be extended for applications such as:
 ## 🏗️ Project Architecture
 
 ```text
-CivicGuardAI/
-│
-├── app/              # Application pages and routes
-├── components/       # Reusable UI components
-├── lib/              # Utility functions and libraries
-├── models/           # Data models
-├── public/           # Static assets
-├── python_service/   # Python-based AI/service components
-├── services/         # Application services
-├── types/            # TypeScript type definitions
-│
-├── .gitignore
-├── AGENTS.md
-├── CLAUDE.md
-└── README.md
-```
+User
+  ↓
+CivicGuardAI Web Interface
+  ↓
+Next.js Application
+  ↓
+API / Backend Services
+  ↓
+AI Processing ───→ Python Service
+  ↓
+MongoDB Database
+  ↓
+Incident Data & Safety Assistance
 ## 🎥 Project Demo
 
 CivicGuardAI provides an AI-powered platform for reporting, tracking, and managing civic incidents through a simple and responsive web interface.
