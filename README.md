@@ -50,6 +50,11 @@ CivicGuardAI/
 ├── CLAUDE.md
 └── README.md
 ```
+## 🎥 Project Demo
+
+CivicGuardAI provides an AI-powered platform for reporting, tracking, and managing civic incidents through a simple and responsive web interface.
+
+> 🚧 Live demo coming soon.
 
 ## 🛠️ Tech Stack
 
