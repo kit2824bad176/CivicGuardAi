@@ -1,54 +1,135 @@
-# CivicGuardAI - Modern Civic Safety Platform
+# 🛡️ CivicGuardAI
 
-CivicGuardAI is a next-generation SaaS application designed for citizens to safely report incidents, and for law enforcement to seamlessly track, assign, and manage cases with the power of Artificial Intelligence and cryptographic evidence security.
+### AI-Powered Civic Safety & Incident Management Platform
 
-## Features Built
-- **Next.js 16 App Router** - High-fidelity React components using Tailwind CSS and `lucide-react`.
-- **Role-Based Access Control** - Secure NextAuth integration separating "Citizen", "Police Officer", and "Admin" flows.
-- **Smart Incident Detection** - Auto-identifies repeating crime hotspots.
-- **Voice Dictation Complaints** - Web Speech API conversion allows citizens to record descriptions hands-free.
-- **Tamper-Proof Digital Evidence** - Secure Cloudinary integration (or local fallback) logging SHA-256 hashes of all uploads.
-- **Interactive Crime Heatmap** - Full-screen Leaflet mappings.
-- **AI Microservice Integration** - Python FastAPI container prepared for NLP classification.
+CivicGuardAI is a full-stack AI-powered civic safety platform designed to help users report, track, and manage civic incidents while providing intelligent assistance for faster and more organized responses.
 
-## Local Development
-1. `npm install`
-2. Create `.env.local` containing:
-   ```env
-   MONGODB_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/civic
-   NEXTAUTH_SECRET=your_jwt_secret_32_chars
-   NEXTAUTH_URL=http://localhost:3000
-   ```
-3. Run the Next.js frontend: `npm run dev`
+## 🚀 Features
 
-### AI Microservice
-The Python API is located in `/python_service`.
-1. `cd python_service`
-2. `pip install -r requirements.txt`
-3. `uvicorn main:app --reload`
+* 📍 **Incident Reporting** — Report civic and public-safety incidents.
+* 🤖 **AI Assistance** — Use AI-powered analysis to assist with incident information.
+* 📊 **Incident Tracking** — Track reported incidents and their status.
+* 🗺️ **Location-Based Information** — Associate incidents with relevant locations.
+* 🔔 **Safety Assistance** — Provide users with useful information during civic incidents.
+* 👤 **User-Friendly Interface** — Simple and responsive interface for interacting with the platform.
+* 🔐 **Data Management** — Store and manage incident-related information securely.
+* ⚡ **Full-Stack Architecture** — Modern web application with frontend, backend services, and AI components.
 
-## Deployment Strategy
+## 🧠 AI Integration
 
-### 1. Frontend & Core Backend (Vercel)
-The Next.js framework is perfectly optimized for Vercel.
-1. Push this repository to GitHub.
-2. Visit **Vercel.com** and securely import the repository.
-3. In the Vercel dashboard **Environment Variables** section, inject:
-   - `MONGODB_URI`
-   - `NEXTAUTH_SECRET`
-   - `NEXTAUTH_URL` (Set this to your expected Vercel assigned domain, e.g., `https://civicguardai.vercel.app`)
-4. Click Deploy. Vercel will build the frontend, NextAuth routes, and MongoDB APIs globally.
+CivicGuardAI integrates artificial intelligence into the civic-safety workflow to provide intelligent assistance when processing incident-related information.
 
-### 2. Database (MongoDB Atlas)
-1. Sign up for [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-2. Create a Free Cluster (M0).
-3. Under **Network Access**, whitelist `0.0.0.0/0` (or Vercel's specific IP sets).
-4. Get your connection string under **Database > Connect > Drivers** and set that as your `MONGODB_URI`.
+The AI component can be extended for applications such as:
 
-### 3. AI Service (Docker / Render / Railway)
-The Python microservice requires containerized hosting as standard Serverless functions (like Vercel) have tight timeouts unsuitable for heavy AI/NLP loading.
-1. The project includes `python_service/Dockerfile`.
-2. Connect the repository to **Render** or **Railway.app**.
-3. Choose "Deploy from Dockerfile" and target the `/python_service` nested directory.
-4. Set the host port to `8000`. 
-5. The containerized deployment minimizes vendor lock-in and scales dynamically.
+* Incident classification
+* Incident prioritization
+* Text analysis
+* Intelligent recommendations
+* Automated assistance
+* Pattern identification
+
+## 🏗️ Project Architecture
+
+```text
+CivicGuardAI/
+│
+├── app/              # Application pages and routes
+├── components/       # Reusable UI components
+├── lib/              # Utility functions and libraries
+├── models/           # Data models
+├── public/           # Static assets
+├── python_service/   # Python-based AI/service components
+├── services/         # Application services
+├── types/            # TypeScript type definitions
+│
+├── .gitignore
+├── AGENTS.md
+├── CLAUDE.md
+└── README.md
+```
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose                         |
+| ---------- | ------------------------------- |
+| Next.js    | Web application framework       |
+| TypeScript | Application development         |
+| React      | User interface                  |
+| MongoDB    | Data storage                    |
+| Python     | AI/service components           |
+| AI/ML      | Intelligent incident assistance |
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/kit2824bad176/CivicGuardAI.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd CivicGuardAI
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env.local` file and add the environment variables required by the project.
+
+Example:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+Add any additional API keys or service configuration required by your implementation.
+
+### 5. Run the development server
+
+```bash
+npm run dev
+```
+
+Open the application in your browser at:
+
+```text
+http://localhost:3000
+```
+
+## 📸 Screenshots
+
+Screenshots of the CivicGuardAI application will be added here.
+
+## 🔮 Future Enhancements
+
+* Real-time incident notifications
+* Advanced AI-based incident classification
+* Incident severity prediction
+* Interactive civic safety dashboard
+* Real-time maps and location visualization
+* Emergency response integration
+* Mobile application
+* Analytics and reporting dashboard
+* Multilingual AI assistance
+
+## 🎯 Project Goal
+
+The goal of CivicGuardAI is to combine **web technologies, artificial intelligence, and civic-safety services** into a single platform that makes incident reporting and information management more accessible and organized.
+
+## 👩‍💻 Developer
+
+**Vanitha M**
+
+AI & Data Science
+KIT – Kalaignarkarunanidhi Institute of Technology, Coimbatore
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star!
