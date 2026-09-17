@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./public/civicguardai-banner.png" alt="CivicGuardAI Banner" width="100%">
+</p>
 # 🛡️ CivicGuardAI
 
 ### AI-Powered Civic Safety & Incident Management Platform
