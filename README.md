@@ -138,6 +138,11 @@ Screenshots of the CivicGuardAI application will be added here.
 * Analytics and reporting dashboard
 * Multilingual AI assistance
 
+
+  ## 🖥️ Project Dashboard
+
+![CivicGuardAI Dashboard](civicguardai-dashboard.png)
+
 ## 🎯 Project Goal
 
 The goal of CivicGuardAI is to combine **web technologies, artificial intelligence, and civic-safety services** into a single platform that makes incident reporting and information management more accessible and organized.
