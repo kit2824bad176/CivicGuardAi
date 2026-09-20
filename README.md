@@ -140,8 +140,8 @@ Screenshots of the CivicGuardAI application will be added here.
 
 
   ## 🖥️ Project Dashboard
+![CivicGuardAI Dashboard](app/civicguardai-dashboard.png)
 
-![CivicGuardAI Dashboard](civicguardai-dashboard.png)
 
 ## 🎯 Project Goal
 
